@@ -55,8 +55,22 @@ body {
         .links {
             margin: 1rem;
             padding: 1rem;
-            width: 7rem;
+            width: 12rem;
+            height: 4rem;
+            opacity: 40%;
+            transition: transform 450ms;
         }
+
+            .links:hover {
+                opacity: 100%;
+                transform: translateY(-10px) translateX(-5px);
+            }
+
+            .links a {
+                text-decoration: none;
+                font-size: 1rem;
+                color: black;
+            }
 
     /* smartphones, iPhone, portrait 480x320 phones */ 
     @media (max-width:320px)  { 
