@@ -1,14 +1,14 @@
-* {
-    font-family: 'Lora', serif;
-}
 
 body {
-    background-image: linear-gradient(to bottom, #000046, #1cb5e0);
+    background-image: linear-gradient(to bottom, #000000, #000046);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: #000; */
+    border: 1px solid white;
+    border-radius: 1%;
 }
 
     content {
@@ -19,7 +19,7 @@ body {
     }
 
         img {
-            max-width: 20%;
+            max-width: 250px;
             border-radius: 50%;
             border: #fff .35rem solid;
             animation: float 6s ease-in-out infinite;
@@ -49,6 +49,7 @@ body {
             h1, h2 {
                 margin: 0;
                 color: #fff;
+                font-family: 'Righteous', cursive, 'Times New Roman', Times, serif;
                 text-shadow: 5px 5px 7px #000046 ;
             }
 
@@ -74,21 +75,159 @@ body {
 
     /* smartphones, iPhone, portrait 480x320 phones */ 
     @media (max-width:320px)  { 
-        img {
-            max-width: 50%;
-        }
+
     }
 
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
     @media (max-width:481px)  { 
-        img {
-            max-width: 50%;
-        }
+
     }
 
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
     @media (max-width:641px)  {
-        img {
-            max-width: 28%;
-        }
+
      }
+
+     section{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: url(./bg0.jpg);
+        background-position-x: center;
+        background-size: cover;
+        animation: animateBg 50s linear infinite;
+    }
+    @keyframes animateBg {
+        0%,100%
+        {
+            transform:scale(1);
+        }
+        50%
+        {
+            transform:scale(1.2);
+        }
+    }
+    span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
+        animation:  animate 10s linear infinite;
+    }
+    span::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 300px;
+        height: 1px;
+        background: linear-gradient(90deg, #fff, transparent);
+    }
+    @keyframes animate {
+        0%
+        {
+            transform: rotate(315deg) translateX(0);
+            opacity: 1;
+        }
+        70%
+        {
+            opacity: 1;
+    
+        }
+        100%
+        {
+            transform: rotate(315deg) translateX(-1500px);
+            opacity: 0;
+    
+        }
+        
+    }
+    span:nth-child(1){
+        top: 0;
+        right: 0;
+        left:initial;
+        animation-delay: 0s ;
+        animation-duration: 1s;
+    }
+    
+    span:nth-child(2){
+        top: 0;
+        right: 80px;
+        left:initial;
+        animation-delay:1.2s;
+        animation-duration: 3s;
+    }
+    
+    span:nth-child(3){
+        top: 80px;
+        right: 0px;
+        left:initial;
+        animation-delay:2.4s ;
+        animation-duration: 2s;
+    }
+    
+    span:nth-child(4){
+        top: 0;
+        right: 180px;
+        left:initial;
+        animation-delay:3.6s;
+        animation-duration: 1.5s;
+    }
+    
+    span:nth-child(5){
+        top: 0;
+        right: 400px;
+        left:initial;
+        animation-delay:4.8s;
+        animation-duration: 2.5s;
+    }
+    
+    span:nth-child(6){
+        top: 0;
+        right: 600px;
+        left:initial;
+        animation-delay:5s ;
+        animation-duration: 3s;
+    }
+    span:nth-child(7 ){
+        top: 300px;
+        right: 0px;
+        left:initial;
+        animation-delay:6s ;
+        animation-duration: 1.75s;
+    }
+    
+    span:nth-child(8){
+        top: 0px;
+        right: 700px;
+        left:initial;
+        animation-delay:7.4s ;
+        animation-duration: 1.25s;
+    }
+    
+    span:nth-child(9){
+        top: 0px;
+        right: 1000px;
+        left:initial;
+        animation-delay:8.75s ;
+        animation-duration: 2.25s;
+    }
+    
+    span:nth-child(10){
+        top: 0px;
+        right: 1000px;
+        left:initial;
+        animation-delay:9.75s ;
+        animation-duration: 2.25s;
+    }
+    
+    
+    
+    
+    
